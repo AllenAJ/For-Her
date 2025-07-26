@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine? 💕</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hearts">
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+        </div>
+        
+
+
+        <div class="letter">
+            <div class="envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-paper"></div>
+                <div class="envelope-detail"></div>
+            </div>
+            <div class="paper">
+                <div class="paper-content">
+                    <div class="paper-close">×</div>
+                    <div class="valentine-message">
+                        <img src="/Users/allen/Documents/Vibe Coding/Valentine/saltobears.gif" alt="Cute Bears" style="max-width: 100px; height: auto; border-radius: 10px; margin: 15px 0; display: block; margin-left: auto; margin-right: auto;">
+                        <p class="question">Will you be my Valentine?</p>
+                        <div class="buttons">
+                            <button class="yes-btn" onclick="showYesResponse()">Yes! 💖</button>
+                            <button class="no-btn" id="noBtn" onclick="runAway()">No 😢</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="response-modal" id="responseModal">
+            <div class="modal-content">
+                <h2 id="responseTitle">💖</h2>
+                <p id="responseMessage"></p>
+                <button onclick="closeModal()" class="close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
